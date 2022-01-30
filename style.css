@@ -1,0 +1,435 @@
+body {
+    color: #444;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+/*========================================
+ リンク
+========================================*/
+a,
+a:active,
+a:focus {
+    color: #444;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/*========================================
+ フォント
+========================================*/
+.num {
+    font-family: 'Montserrat' , sans-serif;
+}
+.price {
+    display: block;
+    font-weight: bold;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+/*========================================
+ リスト
+========================================*/
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+/*==============================
+ヘッダー
+==============================*/
+header {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 80px;
+    background: #333333;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat' , sans-serif;
+    line-height: 80px;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/*========================================
+  ナビゲーション
+========================================*/
+#top-nav {
+    position: relative;
+    float: right;
+    width: 500px;
+    height: 80px;
+}
+
+nav a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#top-nav ul {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 450px;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+}
+
+#top-nav ul li{
+    float: right;
+}
+
+/*========================================
+ レイアウト
+========================================*/
+.site-width {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#main {
+    float: left;
+    min-height: 600px;
+}
+
+.page-1colum #main {
+    width: 100%;
+}
+
+.page-2colum #main {
+    width: 760px;
+}
+
+.page-3colum #main {
+    width: 600px;
+}
+
+.page-logined #main {
+    box-sizing: border-box;
+    border: 5px solid #f1f1f1;
+}
+
+#contents {
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.page-title {
+    margin-bottom: 50px;
+    padding-top: 20px;
+    line-height: 100%;
+    font-size: 32px;
+    overflow: hidden;
+}
+/*========================================
+ メインコンテンツ
+========================================*/
+.title {
+    text-align: center;
+    padding: 15px;
+}
+/*========================================
+ 検索バー
+========================================*/
+
+#search .form {
+    width: auto;
+}
+
+#search {
+    width: 200px;
+    background: #f6f5f5;
+    float: left;
+    min-height: 600px;
+    margin: 0 20px 0 0; 
+}
+
+#search input[type="text"] {
+    background: white;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    margin: auto;
+}
+
+#search select {
+    font-size: 14px;
+}
+
+/*=========================================
+ サイドメニュー
+==========================================*/
+#sideMenu {
+    background-color: #f6f5f4;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    width: 180px;
+    box-sizing: border-box;
+    min-height: 600px;
+}
+
+#sideMenu ul {
+    padding: 0;
+}
+
+#sideMenu ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.page-logined #sideMenu {
+    margin: 0 0 0 20px;
+}
+
+/*========================================
+ フッター
+========================================*/
+footer {
+    padding: 15px;
+    width: 100%;
+    background-color: #333333;
+    text-align: center;
+    font-size: 12px;
+    color: #f6f5f5;
+}
+
+/*========================================
+ フォーム
+========================================*/
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+.form select, 
+textarea {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #f6f5f5;
+    font-size: 18px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="number"] {
+    width: 100px;
+    text-align: left;
+}
+
+input[type="submit"] {
+    margin: 15px 0;
+    padding: 15px 30px;
+    width: 100%;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 14px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.form-container {
+    margin: 0 auto;
+}
+
+.page-2colum .form-container {
+    margin: 80px auto;
+}
+
+.page-withdraw .form {
+    text-align: center;
+}
+
+.page-withdraw .btn {
+    float: none;
+    margin-top: 40px;
+}
+
+.form {
+    padding: 30px;
+    width: 400px;
+    margin: 0 auto;
+    border: 5px solid #f1f1f1;
+    overflow: hidden;
+}
+
+.page-logined .form {
+    border: none;
+}
+
+.form .btn-container {
+    overflow: hidden;
+}
+
+.form .err input {
+    background: #f7dcd9;
+}
+
+.form .err textarea {
+    background: #f7dcd9;
+}
+
+.form .area-msg {
+    font-size: 12px;
+    color: red;
+}
+
+/*========================================
+ ボタン
+========================================*/
+.btn {
+    padding: 15px 20px;
+    text-decoration: none;
+    float: right;
+    max-width: 150px;
+}
+
+/*========================================
+ 日記一覧  投稿履歴
+========================================*/
+
+.diary-list ,
+.diary-log-list {
+    margin-top: 30px;
+}
+
+.diary-info ,
+.diary-log {
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.diary-info .writer-info ,
+.diary-log .log-right {
+    font-size: 12px;
+    float: right;
+}
+
+.diary-info .diary-title ,
+.diary-log .log-left {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*========================================
+ 検索エリア
+========================================*/
+.search-title {
+    margin-bottom: 15px;
+    overflow: hidden;
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 15px;
+}
+
+.search-title .search-right {
+    float: right;
+}
+
+.search-title .search-left {
+    float: left;
+}
+
+/*========================================
+ 日記内容
+========================================*/
+.diary-contents {
+    min-height: 476px;
+    padding: 15px;
+    margin: 15px;
+    background: #f1f1f1;
+}
+
+.diary-title {
+    float: left;
+    margin-right: 20px;
+}
+
+/*========================================
+ ページネーション
+========================================*/
+.pagination {
+    position: relative;
+    overflow: hidden;
+}
+
+.pagination-list {
+    position: relative;
+    left: 50%;
+    float: left;
+    padding-left: 0;
+    list-style: none;
+}
+
+.pagination .list-item {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin-right: 5px;
+}
+
+.pagination .list-item:last-child {
+    margin-right: 0;
+}
+
+.pagination .list-item a {
+    display: block;
+    padding: 5px 10px;
+    background: #eee;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+.pagination .list-item.active a {
+    background: #333;
+    color: white;
+}
+
+.pagination .list-item a:hover {
+    background: #333;
+    color: white;
+}
